@@ -13,9 +13,10 @@ const JobList = () => {
 
   return (
     <div>
+      <h1>All Jobs available</h1>
       {data.map((item) => (
         <p key={item.id}>
-          {item.title} & {item.location}
+          {item.title} <br /> {item.location}
         </p>
       ))}
     </div>
