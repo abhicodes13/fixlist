@@ -14,7 +14,13 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://fixlist-tau.vercel.app"], // ✅ allow only your frontend
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true, // ✅ if you're using cookies or sessions
+  })
+);
 app.use(express.json());
 app.use(bodyParser.json());
 
