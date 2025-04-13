@@ -11,13 +11,9 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
 
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, "../client/fixlist/build")));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/fixlist/build", "index.html"));
+app.get("/", async (req, res) => {
+  res.send("Hello");
 });
-
 // API routes for job listings
 app.use("/jobs", jobRoutes);
 
