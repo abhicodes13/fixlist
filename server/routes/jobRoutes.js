@@ -24,4 +24,4 @@ router.post("/", async (req, res) => {
   await res.send("added");
 });
 
-export default router;
+module.exports = router;
