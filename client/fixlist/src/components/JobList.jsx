@@ -6,7 +6,7 @@ const JobList = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/jobs")
+      .get("https://fixlist.onrender.com/jobs")
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
   }, []);

@@ -7,7 +7,7 @@ const NewJob = () => {
   const [location, setLocation] = useState("");
   function handleSend() {
     axios
-      .post("http://localhost:3000/jobs", {
+      .post("https://fixlist.onrender.com/jobs", {
         id: Date.now().toString(),
         title,
         location,
