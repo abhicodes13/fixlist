@@ -26,8 +26,9 @@ label {
 }
 p {
   background-color: #1a1a1a;
-  width: 400px;
-  height: 100px;
+  display: flex;
+  width: auto;
+  height: 50px;
 }
 input {
   display: block;
