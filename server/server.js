@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 app.get("/", async (req, res) => {
-  res.send("Hello");
+  res.send("Welcome to api fixlist");
 });
 // API routes for job listings
 app.use("/jobs", jobRoutes);
