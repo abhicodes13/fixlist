@@ -14,6 +14,11 @@ const jobs = [
     title: "Wall Painting",
     location: "Queens",
   },
+  {
+    id: "3",
+    title: "Street Cleaner",
+    location: "Manhattan",
+  },
 ];
 
 // Get all jobs
