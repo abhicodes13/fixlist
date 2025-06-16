@@ -12,4 +12,5 @@ function App() {
   );
 }
 
+// will be working shortly on some new features and using a real database with better ui
 export default App;
